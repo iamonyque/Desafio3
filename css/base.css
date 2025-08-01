@@ -65,7 +65,7 @@ footer {
         transition: transform 0.3s ease;
     }
     .redes-sociais img:hover {
-        text-replace: scale (1.1);
+        transform: scale (1.1);
     }
 .copy p {
     margin: 0;
