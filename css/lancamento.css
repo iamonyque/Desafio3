@@ -2,21 +2,106 @@
     flex: 0 0 300px;
     padding-right: 20px;
 }
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.texto-promocional {
+    margin-left: 10rem;
+}
 .texto-promocional p {
     font-size: 16px;
     line-height: 1.5;
     color: #000;
-    margin: 20px 100px;
-    text-align: left;
+    margin: 60px 10px;
+    text-align: justify;
 }
 .video {
     flex: 1;
     min-width: 0;
 }
 .video iframe {
-    width: 90%;
+    width: 70%;
     height: 500px;
     border-radius: 8px;
     border: none;
     box-shadow: 6px 8px 8px rgb(58, 67, 70);
+}
+
+table.tabela-carros {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    gap: 30px;
+}
+.veiculo-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 2s ease forwards;
+}
+
+.veiculo-card:nth-child(1) { animation-delay: 0.1s; }
+.veiculo-card:nth-child(2) { animation-delay: 0.3s; }
+.veiculo-card:nth-child(3) { animation-delay: 0.5s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.veiculo-informacao {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.veiculo-informacao img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: auto;
+    vertical-align: bottom;
+    padding-top: 2rem;
+    gap: 1rem;
+
+}
+.veiculo-checkbox {
+    width: 5rem; 
+    cursor: pointer;  
+    position: relative;
+    flex-shrink: 0;
+}
+.veiculo-informacao h5 {
+    margin: 0;
+    font-size: 12px;
+    text-align: left;
+    font-weight: bold;
+    color: #1351d8;
+}
+.veiculo-informacao p {
+    margin: 0;
+    font-size: 11px;
+    text-align: left;
+    color: #000;
+}
+.submit-botao {
+    background-color: #1351d8;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px auto 0;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    max-width: 200px;
+}
+.submit-botao:hover {
+    background-color: #00274C;
+    color: #fff;
+    transform: translateY(-2px);
 }
