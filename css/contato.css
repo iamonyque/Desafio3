@@ -57,9 +57,28 @@
 
 .inputgrupo select {
     appearance: none;
+    width: 21rem;
     color: #555;
 }
 .inputgrupo textarea {
     resize: vertical;
     min-height: 30px;
+}
+.submit-botao {
+    display: flex;
+    justify-content: center;
+    margin-left: 7rem;
+    width: 70%;
+    border: none;
+    border-radius: 9px;
+    background-color: #1351d8;
+    color: #fff;
+    padding: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.submit-botao:hover {
+    background-color: #00274C;
+    color: #fff;
+    transform: translateY(-2px);
 }

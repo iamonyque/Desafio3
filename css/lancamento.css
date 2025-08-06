@@ -36,6 +36,7 @@ table.tabela-carros {
     gap: 30px;
 }
 .veiculo-card {
+    width: 21rem;
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 2s ease forwards;
@@ -56,18 +57,20 @@ table.tabela-carros {
     align-items: flex-start;
     justify-content: space-between;
     gap: 1rem;
+    margin: 2rem;
 }
-.veiculo-informacao img {
-    width: 1.5rem;
-    height: 1.5rem;
+.veiculo-informacao img [info-icon] {
+    width: 20px;
     margin-top: auto;
     vertical-align: bottom;
-    padding-top: 2rem;
-    gap: 1rem;
-
 }
+
 .veiculo-checkbox {
-    width: 5rem; 
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    margin: 2px 10px 0 0; 
     cursor: pointer;  
     position: relative;
     flex-shrink: 0;
