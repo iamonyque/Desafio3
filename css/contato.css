@@ -67,10 +67,12 @@
 .submit-botao {
     display: flex;
     justify-content: center;
-    margin-left: 7rem;
+    margin-left: 8rem;
+    margin-top: 10px;
     width: 70%;
     border: none;
     border-radius: 9px;
+    font-size: 1rem;
     background-color: #1351d8;
     color: #fff;
     padding: 6px;
