@@ -4,7 +4,16 @@ main .imagem-principal img {
     border-radius: 10px;
 }
 
+main p {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 0 20px;
+}
 
-
+@media (max-width: 768px) {
+    main p {
+        font-size: 14px;
+    }
+}
 
 

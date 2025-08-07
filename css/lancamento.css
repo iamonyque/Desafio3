@@ -1,95 +1,93 @@
-.texto-promocional {
+.texto_promocional{
     flex: 0 0 300px;
     padding-right: 20px;
 }
-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.texto-promocional {
-    margin-left: 10rem;
-}
-.texto-promocional p {
+
+.texto_promocional p{
+    text-align: justify;
     font-size: 16px;
     line-height: 1.5;
     color: #000;
-    margin: 60px 10px;
-    text-align: justify;
+    margin: 20px 100px;
 }
-.video {
+
+.video_promocional{
     flex: 1;
     min-width: 0;
 }
-.video iframe {
-    width: 70%;
+
+.video_promocional iframe{
+    width: 90%;
     height: 500px;
     border-radius: 8px;
     border: none;
     box-shadow: 6px 8px 8px rgb(58, 67, 70);
 }
 
-table.tabela-carros {
+.tabelaCarros {
     display: flex;
     justify-content: center;
-    padding-top: 10px;
     gap: 30px;
 }
+
 .veiculo-card {
-    width: 21rem;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 2s ease forwards;
+    width: 250px;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
 }
 
-.veiculo-card:nth-child(1) { animation-delay: 0.1s; }
-.veiculo-card:nth-child(2) { animation-delay: 0.3s; }
-.veiculo-card:nth-child(3) { animation-delay: 0.5s; }
-
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.veiculo-card img{
+    width: 100%;
+    height: auto;
 }
-.veiculo-informacao {
+
+.veiculoInformacao {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
-    gap: 1rem;
-    margin: 2rem;
 }
-.veiculo-informacao img [info-icon] {
+
+.veiculoInformacao input[type="checkbox"]{
+    width: 30px;
+    height: 30px;
+    min-width: 20px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 2px 10px 0 0;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.veiculoInformacao img{
     width: 20px;
     margin-top: auto;
     vertical-align: bottom;
 }
 
-.veiculo-checkbox {
-    width: 30px;
-    height: 30px;
-    border: 1px solid #000;
-    border-radius: 4px;
-    margin: 2px 10px 0 0; 
-    cursor: pointer;  
-    position: relative;
-    flex-shrink: 0;
+.texto-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
-.veiculo-informacao h5 {
+
+.veiculoInformacao h5{
     margin: 0;
     font-size: 12px;
     text-align: left;
     font-weight: bold;
     color: #1351d8;
 }
-.veiculo-informacao p {
+
+.veiculoInformacao p {
     margin: 0;
     font-size: 11px;
     text-align: left;
     color: #000;
 }
-.submit-botao {
-    background-image: linear-gradient(45deg, #1351d8, #00274C);
+
+.submit-botao{
+    background-color: #1351d8;
     color: white;
     border: none;
     padding: 12px;
@@ -100,11 +98,13 @@ table.tabela-carros {
     margin: 10px auto 0;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 80%;
     max-width: 200px;
 }
-.submit-botao:hover {
-    background-image: #00274C;
+
+.submit-botao:hover{
+    background-color: #00274C;
     color: #fff;
     transform: translateY(-2px);
 }
