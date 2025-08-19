@@ -10,14 +10,13 @@
     color: #000;
     margin: 20px 100px;
 }
-
 .video_promocional{
     flex: 1;
     min-width: 0;
 }
 
 .video_promocional iframe{
-    width: 90%;
+    width: 50%;
     height: 500px;
     border-radius: 8px;
     border: none;
@@ -87,7 +86,7 @@
 }
 
 .submit-botao{
-    background-color: #1351d8;
+    background: linear-gradient(#1351d8,#00274C);
     color: white;
     border: none;
     padding: 12px;
